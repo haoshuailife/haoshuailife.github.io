@@ -9,7 +9,7 @@
 	
 	<title>
 	
-		本博客搭建过程 | 
+		关于本博客 | 
 	 
 	郝帅的博客
 	</title>
@@ -108,8 +108,15 @@
 							</ul>
 			
 							<ul>
-								<li class="file active">
-									<a href="/2024/05/12/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										关于本博客
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2024/05/12/%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%8D%9A%E5%AE%A2/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
                      
 										    hexo博客搭建
                      
@@ -119,14 +126,18 @@
 							</ul>
 			
 							<ul>
-								<li class="file">
-									<a href="/2023/04/12/%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%8D%9A%E5%AE%A2/">
+								<li class="file active">
+									<a href="/2023/04/12/%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%8D%9A%E5%AE%A2/%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%8D%9A%E5%AE%A2/">
                      
 										    关于本博客
                      
 									</a>
 								</li>
 								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
 							</ul>
 			
 		</div>
@@ -136,7 +147,7 @@
 	<!-- 引入正文 -->
 	<div id="content" class="content">
 		<h1 id="article-title">
-	本博客搭建过程
+	关于本博客
 </h1>
 
 <!-- meta -->
@@ -144,7 +155,7 @@
 	
 
 	<span>John Doe</span>
-	<span>2024-05-12 19:04:18</span>
+	<span>2023-04-12 09:15:57</span>
 
   <div id="article-categories">
     
@@ -162,29 +173,19 @@
 
 <!-- content -->
 <div id="article-content">
-	<h1 id="hexo-blog搭建"><a href="#hexo-blog搭建" class="headerlink" title="hexo blog搭建"></a>hexo blog搭建</h1><ol>
-<li>github仓库 + hexo开源项目+webstorm编译器 + nodejs支持</li>
-<li>安装node.js,git。<br>检测方法<br>git –version<br>node -v<br>npm -v</li>
-<li>本地开发环境，我用的webstorm，安装hexo<br>命令：npm install -g hexo-cli<br>切到想安装目录下，hexo init<br>hexo s 查看效果 端口默认4000  </li>
-<li>建立本地项目和github仓库的联系<br>这里说下为啥不部署到gitee，因为它要实名，很坑。<ul>
-<li>在github新建一个仓库，这里仓库名是有要求的，需要和用户名一样，比如<br>建好之后clone链接为 <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#117;&#98;&#x2e;&#x63;&#111;&#x6d;">&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#117;&#98;&#x2e;&#x63;&#111;&#x6d;</a>:abc&#x2F;abc.github.io.git,用户名为abc<br>这里仓库名就要填写abc.github.io</li>
-<li>然后将git生成的公钥添加到github</li>
-<li>本地装插件 支持通过git上传  npm install hexo-deployer-git –save<ul>
-<li>修改hexo配置文件  _config.yml<br>···<br>deploy:<br>type: git<br> repo: <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;">&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;</a>:abc&#x2F;abc.github.io.git<br> branch: master<br>···</li>
-</ul>
-</li>
-<li>hexo g 编译静态文件</li>
-<li>hexo d 上传到github</li>
-</ul>
-</li>
-<li>博客就可以在公网访问了<br>abc.github.io</li>
-<li>后期-写文章<br>写在blog&#x2F;source&#x2F;_post下面<br>然后  hexo clean - 清除缓存文件<br>hexo g     - 生成缓存文件<br>hexo d     - 推送到github  </li>
-<li>换主题<br>volantis发现一款很不错的主题，只需俩步：  <ul>
-<li>修改配置：theme: volantis</li>
-<li>blog更目录输入 npm i hexo-theme-volantis<br>s:&#x2F;&#x2F;gitee.com&#x2F;haoshuai&#x2F;my_image&#x2F;raw&#x2F;master&#x2F;blog-title.jfif</li>
-</ul>
-</li>
-</ol>
+	<h1 id="关于本博客"><a href="#关于本博客" class="headerlink" title="关于本博客"></a>关于本博客</h1><h2 id="这个博客是2023年建立的，现在是2024年5月，我决定长期去维护它了。这个静态博客，我主要是做内容，功能上顶多是一些配置了。"><a href="#这个博客是2023年建立的，现在是2024年5月，我决定长期去维护它了。这个静态博客，我主要是做内容，功能上顶多是一些配置了。" class="headerlink" title="这个博客是2023年建立的，现在是2024年5月，我决定长期去维护它了。这个静态博客，我主要是做内容，功能上顶多是一些配置了。"></a>这个博客是2023年建立的，现在是2024年5月，我决定长期去维护它了。<br>这个静态博客，我主要是做内容，功能上顶多是一些配置了。</h2><p>Todo List</p>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>完成度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>评论功能</td>
+<td></td>
+</tr>
+</tbody></table>
 
 </div>
 
@@ -193,11 +194,16 @@
     <div class="post-guide">
         <div class="item left">
             
+              <a href="/2024/05/12/%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%8D%9A%E5%AE%A2/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  本博客搭建过程
+              </a>
+            
         </div>
         <div class="item right">
             
-              <a href="/2023/04/12/%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%8D%9A%E5%AE%A2/">
-                关于本博客
+              <a href="/2023/04/11/hello-world/">
+                Hello World
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             
